@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="/search/static/styles.css">
+    </head>
+
+    <body>
+
+        <style>
+            span {
+                color: #4285f4;
+                font: 16px/16px roboto-regular, arial, sans-serif;
+                position: absolute;
+                top: 90%;
+                left: 89%;
+                transform: translate(-50%, -50%);
+            }
+
+            #googel-logo-div {
+                position: relative;
+                display: inline-block;
+            }
+
+        </style>
+
+        <main>
+
+            <nav>
+                <a href="/search/index.html">Googel search</a>
+                <a href="/search/advanced_search.html">Advanced search</a>
+            </nav>
+            
+            <div id="upper-half">
+
+                <div id="googel-logo-div">
+                    <img id="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel">
+                    <span id="images-span">images</span>
+                </div>
+
+            </div>
+
+
+            <div id="bottom-half">
+                
+                <form action="https://images.google.com/" autocomplete="off" method="GET" role="search">
+                    <input type="text" name="q">
+                    <br>
+                    <div id="submit_inputs">
+                        <input type="submit" value="Google Search">
+                        <input action="https://www.google.com/doodles" type="submit" value="I'm Feeling lucky">
+                    </div>
+                </form>
+
+            </div>
+
+        </main>
+    </body>
+</html>

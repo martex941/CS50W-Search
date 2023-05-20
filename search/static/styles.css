@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #202124;
+}
+
+body {
+    background: #fff;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#upper-half, #bottom-half {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#googel-logo {
+    margin-top: 100%;
+    width: 272px;
+    height: 92px;
+    margin-bottom: 1rem;
+}
+
+#submit_inputs {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]{ 
+    display: flex;
+    z-index: 3;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 582px;
+    max-width: 584px;
+    padding-top: 6px;
+    position: relative;
+}
+
+input[type="submit"], a {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+a {
+    text-decoration: none;
+}
+
