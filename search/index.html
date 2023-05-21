@@ -2,33 +2,31 @@
 <html lang="en">
 
     <head>
+        <meta charset="UTF-8">
         <title>Search</title>
         <link rel="stylesheet" href="/search/static/styles.css">
     </head>
 
     <body>
         <main>
-
             <nav>
-                <a href="/search/image_search.html">Image search</a>
-                <a href="/search/advanced_search.html">Advanced search</a>
+                <a class="button-look" href="/search/image_search.html">Image search</a>
+                <a class="button-look" href="/search/advanced_search.html">Advanced search</a>
             </nav>
             
-
-            <div id="upper-half">
-                <div id="googel-logo-div">
-                    <img id="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel">
+            <div class="upper-half d-flex-just-center">
+                <div class="googel-logo-div">
+                    <img class="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel">
                 </div>
             </div>
 
-
-            <div id="bottom-half">
+            <div class="bottom-half d-flex-just-center">
                 <form action="https://google.com/search" autocomplete="off" method="GET" role="search">
                     <input type="text" name="q">
                     <br>
-                    <div id="submit_inputs">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling lucky">
+                    <div class="d-flex-just-center">
+                        <input class="button-look" type="submit" value="Google Search">
+                        <input class="button-look" type="submit"  name="btnI" value="I'm Feeling lucky">
                     </div>
                 </form>
             </div>

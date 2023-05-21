@@ -22,28 +22,25 @@ main {
     height: 100%;
 }
 
-#upper-half, #bottom-half {
+.d-flex-just-center {
     display: flex;
     justify-content: center;
+}
+
+.upper-half, .bottom-half {
     width: 100%;
     margin-top: 1rem;
 }
 
-#googel-logo {
+.googel-logo {
     margin-top: 50%;
     width: 272px;
     height: 92px;
     margin-bottom: 1rem;
 }
 
-#submit_inputs {
+.bottom-half input[type="text"]{ 
     display: flex;
-    justify-content: center;
-}
-
-input[type="text"]{ 
-    display: flex;
-    z-index: 3;
     min-height: 44px;
     background: #fff;
     border: 1px solid #dfe1e5;
@@ -52,32 +49,40 @@ input[type="text"]{
     margin: 0 auto;
     width: 582px;
     max-width: 584px;
-    padding-top: 6px;
     position: relative;
+    font-size: 18px;
+    font-weight: 100;
+    color:#3c4043;
 }
 
-input[type="submit"], a {
+.bottom-half input[type="text"]:focus {
+    border: 1px solid #a3a3a3;
+    outline: none;
+}
+
+.button-look {
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
     font-family: arial,sans-serif;
     font-size: 14px;
-    margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
+}
+
+input[type="submit"] {
+    margin: 11px 4px;
     height: 36px;
-    min-width: 54px;
     text-align: center;
-    cursor: pointer;
-    user-select: none;
 }
 
 nav {
     padding: 1rem;
+    display: flex;
+    justify-content: end;
 }
 
 a {
     text-decoration: none;
 }
-

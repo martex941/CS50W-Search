@@ -2,7 +2,8 @@
 <html lang="en">
 
     <head>
-        <title>Search</title>
+        <meta charset="UTF-8">
+        <title>Image Search</title>
         <link rel="stylesheet" href="/search/static/styles.css">
     </head>
 
@@ -18,38 +19,34 @@
                 transform: translate(-50%, -50%);
             }
 
-            #googel-logo-div {
+            .googel-logo-div {
                 position: relative;
                 display: inline-block;
             }
-
         </style>
 
         <main>
 
             <nav>
-                <a href="/search/index.html">Googel search</a>
-                <a href="/search/advanced_search.html">Advanced search</a>
+                <a class="button-look" href="/search/index.html">Googel search</a>
+                <a class="button-look" href="/search/advanced_search.html">Advanced search</a>
             </nav>
             
-            <div id="upper-half">
-
-                <div id="googel-logo-div">
-                    <img id="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel">
-                    <span id="images-span">images</span>
+            <div class="upper-half d-flex-just-center">
+                <div class="googel-logo-div">
+                    <img class="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel">
+                    <span class="images-span">images</span>
                 </div>
-
             </div>
 
 
-            <div id="bottom-half">
-                
-                <form action="https://images.google.com/" autocomplete="off" method="GET" role="search">
+            <div class="bottom-half d-flex-just-center">
+                <form action="https://google.com/search" autocomplete="off" method="GET" role="search">
+                    <input type="hidden" name="tbm" value="isch">
                     <input type="text" name="q">
                     <br>
-                    <div id="submit_inputs">
-                        <input type="submit" value="Google Search">
-                        <input action="https://www.google.com/doodles" type="submit" value="I'm Feeling lucky">
+                    <div class="d-flex-just-center">
+                        <input class="button-look" type="submit" value="Google Search">
                     </div>
                 </form>
 

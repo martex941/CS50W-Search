@@ -2,53 +2,113 @@
 <html lang="en">
 
     <head>
-        <title>Search</title>
+        <meta charset="UTF-8">
+        <title>Advanced Search</title>
         <link rel="stylesheet" href="/search/static/styles.css">
     </head>
 
     <body>
 
         <style>
-            label {
+            .adv-search label {
                 color: #e46;
                 margin-left: 10px;
             }
 
-            #adv-srch {
+            .border-line {
+                border-bottom: 1px solid #ebebeb
+            }
+
+            .adv-srch {
                 color: #d93025;
                 font-size: 20px;
                 margin: 25px 35px;
             }
 
-            #adv-form {
-                display: block;
+            .adv-form {
+                max-width: 1140px;
+                min-width: 200px;
+                width: 96%;
+                margin: 40px 2% 0 45px
             }
 
-            nav #googel-logo {
-                margin-top: 0%;
-                width: 136px;
-                height: 46px;
+            input.adv-button {
+                background-color: #357ae8;
+                color:#ebebeb;
+                padding: 0 12px;
+                margin: 10px 0;
             }
+
+            .form-span {
+                height: 30px;
+                display: table-cell;
+                vertical-align: middle;
+                display: inline-block;
+                font-size: 16px;
+                min-height: 42px;
+            }
+
+            .form-label {
+                font-size: 16px;
+                height: 30px;
+                display: table-cell;
+                vertical-align: middle;
+                width: 16%;
+                display: contents;
+            }
+
+            .form-label input {
+                padding-right: 16px;
+                width: 415px;
+                min-width: auto;
+            }
+
+            .main-body-form {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 15px;
+            }
+
         </style>
 
         <main>
 
             <nav>
-                <img id="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel logo">
-                <a href="/search/index.html">Googel search</a>
-                <a href="/search/image_search.html">Image search</a>    
+                <a class="button-look" href="/search/index.html">Googel search</a>
+                <a class="button-look" href="/search/image_search.html">Image search</a>    
             </nav>
             
-            <div id="adv-srch">
+            <div class="adv-srch">
                 <label>Advanced Search</label> 
             </div>
+            <div class="border-line"></div>
 
-            <div id="adv-form">
-                <form action="https://google.com/search" autocomplete="off" method="GET" role="search">
-                    <input type="text" name="q">
-                    <br>
-                    <div id="submit_inputs">
-                        <input type="submit" value="Advanced Search">
+            <div class="adv-form">
+                <form action="https://google.com/search" method="GET" role="search">
+                    <div class="form-span">
+                        <span>Find pages with....</span>
+                    </div>
+                    <div class="main-body-form">
+                        <div class="form-label">
+                            <label for="1">all these words:</label>
+                            <input value="" autofocus="autofocus" id="1" name="as_q" type="text">
+                        </div>
+                        <div class="form-label">
+                            <label for="2">this exact word or phrase:</label>
+                            <input value="" autofocus="autofocus" id="2" name="as_epq" type="text">
+                        </div>
+                        <div class="form-label">
+                            <label for="3">any of these words:</label>
+                            <input value="" autofocus="autofocus" id="3" name="as_oq" type="text">
+                        </div>
+                        <div class="form-label">
+                            <label for="4">none of these words:</label>
+                            <input value="" autofocus="autofocus" id="4" name="as_eq" type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex-just-center">
+                        <input class="adv-button button-look" type="submit" value="Advanced Search">
                     </div>
                 </form>
             </div>
