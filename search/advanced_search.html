@@ -9,30 +9,46 @@
     <body>
 
         <style>
+            label {
+                color: #e46;
+                margin-left: 10px;
+            }
 
+            #adv-srch {
+                color: #d93025;
+                font-size: 20px;
+                margin: 25px 35px;
+            }
+
+            #adv-form {
+                display: block;
+            }
+
+            nav #googel-logo {
+                margin-top: 0%;
+                width: 136px;
+                height: 46px;
+            }
         </style>
 
         <main>
 
             <nav>
+                <img id="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel logo">
                 <a href="/search/index.html">Googel search</a>
-                <a href="/search/image_search.html">Image search</a>
+                <a href="/search/image_search.html">Image search</a>    
             </nav>
             
-            <div id="upper-half">
-                <div id="googel-logo-div">
-                    <img id="googel-logo" src="/search/static/googlelogo_color_272x92dp GOOGEL.png" alt="Googel">
-                </div>
+            <div id="adv-srch">
+                <label>Advanced Search</label> 
             </div>
 
-
-            <div id="bottom-half">
+            <div id="adv-form">
                 <form action="https://google.com/search" autocomplete="off" method="GET" role="search">
                     <input type="text" name="q">
                     <br>
                     <div id="submit_inputs">
-                        <input type="submit" value="Google Search">
-                        <input type="submit" value="I'm Feeling lucky">
+                        <input type="submit" value="Advanced Search">
                     </div>
                 </form>
             </div>
